@@ -11,7 +11,6 @@
 
 ## Usage
 ```console
-$ gcc 6.3.0 (packages: gcc, g++)
 $ g++ SavingTheUniverse.cpp -std=c++14 -pthread -O3 -o SolutionA
 $ g++ TroubleSort.cpp -std=c++14 -pthread -O3 -o SolutionB
 $ g++ GoGopher.cpp -std=c++14 -pthread -O3 -o SolutionC
