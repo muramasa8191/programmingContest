@@ -6,7 +6,7 @@ using namespace std; // since cin and cout are both in namespace std
 constexpr int START_X = 5; // margin
 constexpr int START_Y = 5; // margin
 
-bool checkRange(const int x, const int y, int width, int height, const vector<vector<bool>> &grid)
+bool checkRange(const int x, const int y, const vector<vector<bool>> &grid)
 {
     for (int i = x - 1, end_x = x + 1; i <= end_x; ++i)
     {
@@ -47,7 +47,7 @@ int main()
         int y = START_Y + 1;
         for (int j = 0; j < 1000; ++j) // 1000 trial
         {
-            while(checkRange(x, y, width, height, grid))
+            while(checkRange(x, y, grid))
             {
                 if (++x >= dest_x) // this row is done
                 {
